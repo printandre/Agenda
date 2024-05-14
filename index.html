@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Agenda</title>
+</head>
+<body>
+    <div class="addContact">
+        <h3>Insert new contact</h3>
+        <label>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="phoneNumber">Phone:</label>
+            <input type="text" id="phoneNumber" name="phoneNumber"><br><br>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email"><br><br>
+            <input type="submit" id="submit" value="Add">
+            <p class="message" id="addMessage"></p>
+        </label>
+    </div>
+
+    <div class="findContact">
+        <h3>Search contact</h3>
+        <label>
+            <label for="search_name">Name:</label>
+            <input type="text" id="searchName" name="searchName"><br><br>
+            <input type="submit" id="search" value="Search">
+            <p class="message" id="searchMessage"></p>
+        </label>
+    </div>
+
+    <div class="removeContact">
+        <h3>Remove contact</h3>
+        <label>
+            <label for="remove_name">Name:</label>
+            <input type="text" id="removeName" name="removeName"><br><br>
+            <input type="submit" id="remove" value="Remove">
+            <p class="message" id="deleteMessage"></p>
+        </label>
+    </div>
+
+    <div class="printAgenda">
+        <h3>Print the entire agenda</h3>
+        <input type="submit" id="print" value="Click!" style="margin-bottom: 10px">
+        <div class="message" id="printMessage"></div>
+    </div>
+
+    <div class="downloadAgenda">
+        <h3>Download contacts</h3>
+        <input type="submit" id="download" value="Download JSON file"> 
+        <p class="message" id="downloadMessage"></p>
+    </div>
+
+    
+    <script src="main.js"></script>
+</body>
+</html>
